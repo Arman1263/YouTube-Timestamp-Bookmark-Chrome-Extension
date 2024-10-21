@@ -1,0 +1,88 @@
+/* General popup styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 15px;
+  background-color: #f2eafc; /* Light lavender background */
+  color: #333;
+}
+
+h3 {
+  color: #6a0dad; /* Dark purple for title */
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ff8c00; /* Orange underline */
+  padding-bottom: 10px;
+}
+
+/* Styling the bookmark list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f6e9ff; /* Lighter lavender for list items */
+  border: 2px solid #e5c7ff; /* Border for list items */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #e0ccff; /* Darker lavender on hover */
+  transform: scale(1.03); /* Slight zoom effect */
+}
+
+li a {
+  text-decoration: none;
+  color: #6a0dad; /* Dark purple for list links */
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+li a:hover {
+  color: #ff8c00; /* Orange color on hover */
+}
+
+/* Animated bookmark button */
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #6a0dad; /* Dark purple */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8c00; /* Orange on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+button:active {
+  background-color: #d47300; /* Darker orange on click */
+  transform: translateY(0); /* Lower the button back on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Restore shadow on click */
+}
+
+/* Centered, styled footer message */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
